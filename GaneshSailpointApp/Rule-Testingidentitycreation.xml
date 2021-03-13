@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Rule PUBLIC "sailpoint.dtd" "sailpoint.dtd">
+<Rule language="beanshell" name="TestingIdentityCreation">
+  <Source><![CDATA[
+    
+    
+    import sailpoint.tools.GeneralException;
+    import sailpoint.object.Identity;
+     
+     Identity iden = new Identity();
+     
+    
+     iden.setName("GGGGGGG");
+     iden.setAttribute("email","adapa@gamil.com");
+     context.saveObject(iden);
+     context.commitTransaction();
+     
+     
+  ]]></Source>
+</Rule>

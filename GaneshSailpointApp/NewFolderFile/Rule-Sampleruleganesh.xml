@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Rule PUBLIC "sailpoint.dtd" "sailpoint.dtd">
+<Rule language="beanshell" name="SampleRuleGanesh">
+  <Source><![CDATA[
+  import sailpoint.object.Identiy;
+  import sailpoint.object.*;
+  
+  Identity id = context.getObjectByName(Identity.class,"OJASIDM\\adapaganesh");
+  if(id != null) {
+  
+  }
+  return id;
+  ]]></Source>
+</Rule>

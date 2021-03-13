@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Rule PUBLIC "sailpoint.dtd" "sailpoint.dtd">
+<Rule language="beanshell" name="CreationOfIdentityAndAssignGroup">
+  <Source><![CDATA[
+  import sailpoint.object.Identiy;
+  import sailpoint.object.*;
+  import sailpoint.api.SailPointContext;
+  
+  Identity id = new Identity();
+  id.setName("Mahesh Babu");
+  id.setFirstname("Angallu");
+  id.setWorkgroup(true);
+  context.saveObject(id);
+  context.commitTransaction();
+  
+  if(id != null) {
+  
+  }
+  return id;
+  ]]></Source>
+</Rule>

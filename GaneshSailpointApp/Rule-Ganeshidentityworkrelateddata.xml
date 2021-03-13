@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Rule PUBLIC "sailpoint.dtd" "sailpoint.dtd">
+<Rule language="beanshell" name="GaneshIdentityWorkRelatedData">
+  <Source><![CDATA[
+  import sailpoint.object.Identity;
+  import sailpoint.api.SailPointContext;
+  
+ Identity id = new Identity();
+	Date d = new Date();
+	  id.setName("Madanapalli");
+	  id.setFirstname("Nalgonda");
+	  id.setLastname("Chittoor");
+	  id.setPassword("Ganesh@1998");
+	  id.setPasswordExpiration(d);
+
+	  
+	  context.saveObject(id);
+	  context.commitTransaction();
+  
+ 
+  ]]></Source>
+</Rule>

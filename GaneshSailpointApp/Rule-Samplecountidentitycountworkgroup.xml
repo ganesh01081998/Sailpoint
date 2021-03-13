@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Rule PUBLIC "sailpoint.dtd" "sailpoint.dtd">
+<Rule language="beanshell" name="SampleCountIdentityCountWorkgroup">
+  <Source><![CDATA[
+  import sailpoint.object.Identiy;
+  import sailpoint.object.*;
+  
+  Filter IdentityFilter = Filter.eq("workgroup",false);
+  QueryOptions identityqo = new QueryOptions();
+  identityqo.addFilter(identityqo);
+  int id = context.countObjects(Identity.class,identityqo);
+  if(id != null) {
+  
+  }
+  return id;
+  ]]></Source>
+</Rule>

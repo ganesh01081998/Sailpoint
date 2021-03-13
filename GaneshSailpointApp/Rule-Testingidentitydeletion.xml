@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Rule PUBLIC "sailpoint.dtd" "sailpoint.dtd">
+<Rule language="beanshell" name="TestingIdentityDeletion">
+  <Source><![CDATA[
+    
+    
+    import sailpoint.tools.GeneralException;
+    import sailpoint.object.Identity;
+     
+     Identity iden = new Identity();
+     
+     context.saveObject(iden);
+     context.commitTransaction();
+     
+     
+  ]]></Source>
+</Rule>
