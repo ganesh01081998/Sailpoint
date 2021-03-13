@@ -7,7 +7,7 @@
   import sailpoint.api.SailPointContext;
   
   Identity id = new Identity();
-  id.setName("Ganesh ........");
+  id.setName("Pallavi ........");
   id.setFirstname("Angallu");
   id.setWorkgroup(true);
   context.saveObject(id);
